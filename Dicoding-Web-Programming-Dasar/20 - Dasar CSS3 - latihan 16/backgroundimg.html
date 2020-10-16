@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background Image Practice</title>
+</head>
+<style>
+    .banner{
+        padding: 80px 0;
+        text-align: center;
+        color: white;
+        background-color: #eee;
+        background-image: url(https://images.designtrends.com/wp-content/uploads/2016/01/28101525/Sky-Sunbeam-Background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @keyframes spinnerrotate{
+        from{-webkit-transform: rotate(0deg);}
+        to{-webkit-transform: rotate(360deg);}
+    }
+    img {
+        position: absolute;
+        animation-name: spinnerrotate;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .animasi{
+        margin: 0 auto;
+        position: relative;
+        width: 256px;
+        height: 256px;
+    }
+    .container{
+        perspective: 80px;
+        background: radial-gradient(#222222, #121212);
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        border-radius: 6px;
+        position:absolute;
+    }
+    .iphonefront, .iphoneback{
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+
+        width: 200px;
+        height:333px;
+
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin: -166px 0 0 -100px;
+        
+        background: url(http://cdn-media.mophie.com/shop/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/c/f/cf-ip7-blk_blk-ip_front-back-left-3qtr_2000px.jpg);
+        transition: 0.5s;
+    }
+    .iphoneback{
+        transform: rotateY(180deg);
+        background-position: right center;
+    }
+    .container:hover .iphonefront{
+        transform: rotateY(180deg);
+    }
+    .container:hover .iphoneback{
+        transform: rotateY(360deg);
+    }
+</style>
+<body>
+    <div class="banner">
+        <h1>Hello Bro</h1>
+    </div>
+    <div class="animasi">
+        <h2>Ini adalah Animasi</h2>
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png">
+    </div>
+    <div class="container">
+        <h2>Ini adalah Animasi 3D</h2>
+        <div class="iphonefront"></div>
+        <div class="iphoneback"></div>
+    </div>
+</body>
+</html>

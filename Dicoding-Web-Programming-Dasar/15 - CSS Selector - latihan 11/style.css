@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+}
+button{
+    background-color: lightskyblue;
+    border: 1px solid skyblue;
+    font-size: 20px;
+    padding: 20px 40px;
+    margin: 20px;
+}
+button:hover{
+    background-color: skyblue;
+    color: white
+}

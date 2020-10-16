@@ -1,0 +1,17 @@
+/* style.css */
+
+h1{
+    color: brown;
+    font-family: Verdana;
+}
+
+.subjudul{
+    color: rgb(58, 48, 48);
+    background-color: coral;
+}
+
+#paragraf{
+    font-size: 20px; 
+    border: 10px red; 
+    padding: 20px;
+}

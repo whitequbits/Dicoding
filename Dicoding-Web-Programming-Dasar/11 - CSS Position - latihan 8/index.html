@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Position</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    .pembungkus{
+        width: 300px;
+        height: 400px;
+        border: 15px solid green;
+        position: relative;
+    }
+    .satu{
+        background-color: blue;
+        text-align: center;
+        color: white
+    }
+    .dua{
+        background-color: yellow;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .tiga{
+        background-color: aqua;
+        text-align: center;
+        color: white
+    }
+</style>
+<body>
+    <div class="pembungkus">
+        <div class="satu">static</div>
+        <div class="dua">static</div>
+        <div class="tiga">static</div>
+    </div>
+</body>
+</html>

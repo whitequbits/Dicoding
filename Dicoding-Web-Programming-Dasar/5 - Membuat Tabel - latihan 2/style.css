@@ -1,0 +1,22 @@
+/* style.css*/
+
+table,
+th,
+td{
+    border: 1px solid blue;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    height: 50px;
+}
+
+th,
+td{
+    padding: 15px;
+    text-align: left;
+}
